@@ -1,0 +1,14 @@
+baseUrl: "http://$flarumHostname"
+databaseConfiguration:
+    host     : "$flarumDbHost"
+    database : "$flarumDbName"
+    username : "$flarumDbUser"
+    password : "$flarumDbPass"
+    prefix   : "$flarumDbPrefix"
+adminUser:
+    username : "$flarumAdminName"
+    email    : "$flarumAdminEmail"
+    password : "$flarumAdminPass"
+    password_confirmation: "$flarumAdminPass"
+settings: 
+    forum_title: "Flarum (Change ASAP)"
