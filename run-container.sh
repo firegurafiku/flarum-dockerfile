@@ -28,7 +28,8 @@ if [ ! -f /.container_configuration_done ] ; then
             set -o errexit
             cd $flarumDir/app
             envsubst </.attach/flarum-config.php >config.php
-            php5 flarum migrate'
+            php5 flarum migrate
+            cp -r vendor/components/font-awesome/fonts assets/'
     fi
     
     touch /.container_configuration_done
